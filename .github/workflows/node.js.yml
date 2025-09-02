@@ -33,7 +33,8 @@ jobs:
 
   gitleaks-scan:
     
-    runs-on: Agent -1
+    runs-on: Agent-1
+    needs: compile
     
     steps:
     - name: Checkout code
